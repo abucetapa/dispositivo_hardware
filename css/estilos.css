@@ -1,0 +1,243 @@
+/*Color*/
+:root{
+    --color-beige: #c5ad6c6c;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --color-azulclaro: rgba(0, 149, 255, 0.35);
+
+}
+
+header{
+    background-color: var(--color-beige);
+    color: var(--color-negro);
+}
+header a{
+    color: var(--color-blanco);
+    color: var(--color-negro);
+}
+.barra-galeria {
+    background-color: var(--color-negro);
+}
+.div-galeria{
+    background-color: var(--color-azulclaro);
+}
+.div-galeria p{
+    color: var(--color-negro);
+}
+th,td{
+    border: 2px solid var(--color-negro);
+}
+.barra-galeria{
+    color: var(--color-negro);
+}
+
+#Info button{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    
+}
+footer{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+footer a{
+    color: var(--color-blanco);
+}
+
+/*tamaño fuentes*/
+header h1{
+    font-size: 70px;       
+}
+#menu ul{
+    font-size: 20px;
+}
+.div-galeria h3{
+    font-size: 30px;
+}
+.div-galeria li{
+    font-size: 15px;
+}
+#tabla-generaciones td{
+    font-size: 15px;
+}
+#tabla-generaciones .caracteristica{
+    font-size: 20px;
+}
+main p{
+    font-size: 20px;
+}
+.generaciones h2{
+    font-size: 45px;
+}
+.generaciones th{
+    font-size: 25px;
+}
+#tabla-generaciones .sidebar{
+    font-size: 25px;
+    font-weight: bold;
+}
+#Info button{
+    font-size: 15px;
+}
+/*barras divisoras*/
+.barra-galeria{
+    width: 10%;
+}
+.barra-galeria {
+    height: 1px;
+    margin: auto;
+    width: 100%; 
+}
+.barra{
+    padding: 100px;
+}
+
+
+
+/*Header*/
+header{
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#menu{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    flex-grow: 1;
+}
+
+#anillo{
+    width: 55%;
+    align-self:center;
+    
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li{
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+/*main*/
+main p{
+    text-align: center;
+}
+
+
+
+/*principal*/
+#definicion{
+    width: 100%;
+    
+}
+
+/*galeria*/
+.Beneficios {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*particion en 3 columnas, 1fr = 1 fraccion para asignar el mismo ancho a cada una*/
+    width: 100%;
+    gap: 20px; 
+}
+.div-galeria {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.div-galeria img {
+    width: 90%; 
+    max-height: 200px;
+    border-radius: 20px; 
+    object-fit: cover;
+    padding: 10px;
+}
+
+.div-galeria ul{
+    list-style: none;
+}
+.div-galeria td {
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 10px;
+}
+
+/*Generaciones - Tabla*/  
+#tabla-generaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;   
+}
+
+.generaciones h2{
+    text-align: center;
+}
+.generaciones th{
+    padding: 10px;
+}
+.generaciones ul{
+    display: grid;
+    height: 100%;
+}
+
+#tabla-generaciones table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#tabla-generaciones td {
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 10px;
+}
+#tabla-generaciones td ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+/*Mas Informacion*/
+#Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+
+#Info button {
+    
+    height: 40px;
+    width: 30%;
+    border-radius: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/*footer*/
+#menu{
+    height: 40px;
+    border-radius: 20px;
+}
+#menu li{
+    display: inline;
+
+    
+}
