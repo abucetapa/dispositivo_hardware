@@ -66,10 +66,10 @@ header h1{
 main p{
     font-size: 20px;
 }
-.generaciones h2{
+#Generaciones h2{
     font-size: 45px;
 }
-.generaciones th{
+#Generaciones th{
     font-size: 25px;
 }
 #tabla-generaciones .sidebar{
@@ -150,7 +150,7 @@ main p{
 }
 
 /*galeria*/
-.Beneficios {
+#Beneficios {
     display: grid;
     grid-template-columns: repeat(3,1fr);/*particion en 3 columnas, 1fr = 1 fraccion para asignar el mismo ancho a cada una*/
     width: 100%;
@@ -187,13 +187,13 @@ main p{
     padding: 20px;   
 }
 
-.generaciones h2{
+#Generaciones h2{
     text-align: center;
 }
-.generaciones th{
+#Generaciones th{
     padding: 10px;
 }
-.generaciones ul{
+#Generaciones ul{
     display: grid;
     height: 100%;
 }
