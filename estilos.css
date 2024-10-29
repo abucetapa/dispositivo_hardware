@@ -95,6 +95,9 @@ main p{
     font-size: 20px;
     font-weight: bold;
 }
+#Info p{
+    font-size: 30px;
+}
 #Info button{
     font-size: 15px;
 }
