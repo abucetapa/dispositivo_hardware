@@ -18,6 +18,9 @@ html{
 #Inicio{
     color: var(--color-negro);
 }
+.menu a{
+    color: var(--color-blanco);
+}
 
 #def{
     background-size:auto;
@@ -66,6 +69,9 @@ footer{
 
 #Inicio #menu li{
     font-size: 20px;
+}
+#menu-header{
+    font-size: 20px;;
 }
 .div-galeria h3{
     font-size: 30px;
@@ -126,10 +132,10 @@ footer a{
     margin: 0;
     justify-content: space-around;
     text-decoration: none;
+    border-left: solid 2px white;
 }
 .menu a{
     text-decoration: none;
-    color: var(--color-blanco);
 }
 
 /*Header*/
@@ -141,7 +147,7 @@ footer a{
     height: 60px;
     
 }
-#menu-header{
+.menu{
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -342,11 +348,13 @@ footer a{
 }
 /*footer*/
 footer{
-    height: 50px;
     border-radius: 20px;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    flex-grow: 1;
+}
+#menu-footer{
+    display:flex;
+    width: 100%;
+    border-radius: 10px;
+    height: 60px;
+    
 }
 
