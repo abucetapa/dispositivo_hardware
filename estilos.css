@@ -4,7 +4,7 @@
     --color-beige-fondo: #f3db9869;
     --color-negro: #000000;
     --color-blanco: #ffffff;
-    --color-azulclaro: rgba(0, 149, 255, 0.35);
+    --color-cuadrogaleria: rgb(73, 55, 55);
     --color-rojo: #eb1b1b;
 
 }
@@ -32,13 +32,13 @@ h2{
     color: var(--color-negro);
 }
 .barra-galeria {
-    background-color: var(--color-negro);
+    background-color: var(--color-blanco);
 }
 .div-galeria{
-    background-color: var(--color-azulclaro);
+    background-color: var(--color-cuadrogaleria);
 }
-.div-galeria p{
-    color: var(--color-negro);
+.div-galeria h3,.div-galeria li {
+    color: var(--color-blanco);
 }
 #Generaciones .tabla-info{
     background-color: var(--color-blanco);
@@ -291,7 +291,7 @@ h2{
     padding: 10px;
 }
 #Generaciones .modelo{
-    border-radius: 15px;
+    border-radius: 30px;
     border-top: none;
     border-left: none;
     border-right: none;
