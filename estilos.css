@@ -92,6 +92,9 @@ main p{
 h2{
     font-size: 45px;
 }
+.SO{
+    font-size: 25px;
+}
 #Generaciones th{
     font-size: 25px;
 }
@@ -128,19 +131,7 @@ footer a{
     width: 100%;
     overflow: hidden;
 }
-/*class*/
-.menu ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: space-around;
-    text-decoration: none;
-    border-left: solid 2px white;
-}
-.menu a{
-    text-decoration: none;
-}
+
 
 /*Header*/
 #MenuHeader{
@@ -160,7 +151,7 @@ footer a{
 
 
 #me ul{
-
+    
     list-style: none;
     text-decoration: none;
 }
@@ -187,6 +178,18 @@ footer a{
     justify-content: space-between;
     margin: auto;
 }
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    text-decoration: none;
+    border-left: solid 2px white;
+}
+.menu a{
+    text-decoration: none;
+}
 
 /*main*/
 h2{
@@ -209,10 +212,10 @@ h2{
 #SO-top{
     border-radius: 20px;
     display: flex;
-    margin-top:20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 10px;
+    
 }
 .fraccion-SO{
     margin-top: 2%;
