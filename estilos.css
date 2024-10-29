@@ -22,7 +22,7 @@ html{
     color: var(--color-blanco);
 }
 
-#def{
+.SO{
     background-size:auto;
     border: solid 15px var(--color-blanco);
     background-color: var(--color-blanco);
@@ -36,10 +36,10 @@ html{
 .div-galeria p{
     color: var(--color-negro);
 }
-#Generaciones #tabla-info{
+#Generaciones .tabla-info{
     background-color: var(--color-blanco);
 }
-#Generaciones #modelo{
+#Generaciones .modelo{
     background-color: var(--color-rojo);
     color: var(--color-blanco);
     border-color: var(--color-negro);
@@ -85,7 +85,7 @@ footer{
 main p{
     font-size: 20px;
 }
-#Generaciones h2{
+h2{
     font-size: 45px;
 }
 #Generaciones th{
@@ -109,9 +109,6 @@ main p{
     height: 1px;
     margin: auto;
     width: 100%; 
-}
-.barra{
-    padding: 100px;
 }
 footer a{
     font-size: 20px;
@@ -145,7 +142,7 @@ footer a{
 #MenuHeader{
     display:flex;
     position:fixed;
-    width: 100%;
+    width: 100%;    
     border-radius: 10px;
     height: 60px;
     
@@ -188,19 +185,19 @@ footer a{
 }
 
 /*main*/
+h2{
+    text-align: center;
+}
 
-#definicion{
-    
+#SobreOura{
     height: 600px;
     width: 100%;
     background-image: url("./img/anillosOura.png");
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    
-    
 }
-#def-arriba{
+#SO-top{
     border-radius: 20px;
     display: flex;
     margin-top:20px;
@@ -208,57 +205,49 @@ footer a{
     margin-left: 40px;
     margin-right: 40px;
 }
-.fraccion-def{
-    margin:30px;
+.fraccion-SO{
+    margin-top: 2%;
+    margin-left:2%;
+    margin-right:2%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-#def-der{
+#SO-right{
     display: flex;
     justify-content: flex-end;
 }
-#def{
+.SO{
     
     border-radius: 20px;
     margin: 40px;
 }
 
-#def-abajo{
-    height: 300px;
+#SO-bottom{
+    margin-top: 200px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-#def-img img{
-    width: 100%;
-    border-radius: 20%;
-
-}
-#def-img{    
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
 /*principal*/
-#definicion{
+#SobreOura{
     width: 100%;
     
 }
 
 /*galeria*/
-#Beneficios {
+#Beneficios-Cuad{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);/*particion en 3 columnas, 1fr = 1 fraccion para asignar el mismo ancho a cada una*/
     width: 100%;
     gap: 20px; 
 }
+
 .div-galeria {
+    
     text-align: center;
     border-radius: 20px;
     overflow: hidden;
@@ -288,23 +277,21 @@ footer a{
     align-items: center;
     padding: 20px;   
 }
-#definicion{
+#SobreOura{
     scroll-margin-bottom: 40px;
 }
 
-#Generaciones h2{
-    text-align: center;
-}
+
 #Generaciones th{
     padding: 10px;
 }
-#Generaciones #modelo{
+#Generaciones .modelo{
     border-radius: 15px;
     border-top: none;
     border-left: none;
     border-right: none;
 }
-#tabla-none{
+.tabla-none{
     border-top: none;
     border-left: none;
     border-right: none;
