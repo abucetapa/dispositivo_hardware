@@ -81,13 +81,13 @@ footer{
     font-size: 30px;
 }
 .div-galeria li{
-    font-size: 15px;
+    font-size: 20px;
 }
 #tabla-generaciones td{
     font-size: 15px;
 }
 main p{
-    font-size: 20px;
+    font-size: 15px;
 }
 h2{
     font-size: 45px;
@@ -267,12 +267,15 @@ h2{
 }
 .div-galeria ul{
     list-style: none;
-}
-.div-galeria td {
-    text-align: center; 
-    vertical-align: middle; 
     padding: 10px;
+    
 }
+.div-galeria li{
+    list-style: none;
+    padding: 5px ;
+    
+}
+
 
 /*Generaciones - Tabla*/  
 #tabla-generaciones {
