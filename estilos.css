@@ -146,15 +146,15 @@ footer a{
 #MenuHeader{
     display:flex;
     position:fixed;
-    width: 100%;    
+    width: 99%;
     border-radius: 10px;
     height: 60px;
-    
+    box-sizing: border-box;
 }
 .menu{
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
+    justify-content: center;
     flex-grow: 1;
 }
 
