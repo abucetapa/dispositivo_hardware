@@ -1,7 +1,7 @@
 /*Color*/
 :root{
     --color-menu-fixed: #a1906281;
-    --color-marron: #f3db9869;
+    --color-beige: #f3db9869;
     --color-negro: #000000;
     --color-blanco: #ffffff;
     --color-cuadrogaleria: rgb(73, 55, 55);
@@ -9,7 +9,7 @@
 
 }
 html{
-    background-color: var(--color-marron);
+    background-color: var(--color-beige);
     color: var(--color-negro);
 }
 #MenuHeader{
@@ -30,7 +30,10 @@ html{
 h2{
     background-color: var(--color-blanco);
     color: var(--color-negro);
-    border-color: var(--color-marron);
+    border-color: var(--color-beige);
+}
+h3{
+    color: var(--color-blanco);
 }
 .barra-galeria {
     background-color: var(--color-blanco);
@@ -38,24 +41,24 @@ h2{
 .div-galeria{
     background-color: var(--color-cuadrogaleria);
 }
-.div-galeria h3,.div-galeria li {
+.div-galeria li {
     color: var(--color-blanco);
 }
 #tabla-generaciones{
     background-color: var(--color-cuadrogaleria);
 }
-#Generaciones .tabla-info{
+#tabla-generaciones .tabla-info{
     background-color: var(--color-blanco);
 }
-#Generaciones .modelo{
+#tabla-generaciones .modelo{
     background-color: var(--color-rojo);
     color: var(--color-blanco);
     border-color: var(--color-negro);
 }
-#Comp-generaciones{
+.Comp{
     border-color: var(--color-cuadrogaleria);
 }
-#Comp-generaciones{
+.Comp{
     background-color: var(--color-blanco);
 }
 th,td{
@@ -64,8 +67,16 @@ th,td{
 .barra-galeria{
     color: var(--color-negro);
 }
-
-#Info button{
+.img-comp{
+    background-color: var(--color-cuadrogaleria);
+}
+.img-comp p{
+    color: var(--color-blanco);
+}
+#v-comp{
+    color: var(--color-negro);
+}
+#info-i button{
     background-color: var(--color-negro);
     color: var(--color-blanco);
     
@@ -105,20 +116,26 @@ h2{
 .SO{
     font-size: 25px;
 }
-#Generaciones th{
+#tabla-generaciones th{
     font-size: 25px;
 }
 #tabla-generaciones .sidebar{
     font-size: 20px;
     font-weight: bold;
 }
-#Comp-txt{
+.box{
     font-size: 20px;
 }
-#Info p{
+.img-comp h3{
     font-size: 30px;
 }
-#Info button{
+.img-comp p{
+    font-size: 20px;
+}
+#info-i p{
+    font-size: 30px;
+}
+#info-i button{
     font-size: 15px;
 }
 /*barras divisoras*/
@@ -153,7 +170,9 @@ footer a{
     width: 99%;
     border-radius: 10px;
     height: 60px;
+    justify-content: flex-start;
     box-sizing: border-box;
+    z-index: auto;
 }
 .menu{
     display: flex; 
@@ -204,7 +223,6 @@ footer a{
     text-decoration: none;
 }
 
-/*general*/
 h2{
     width: 35%;
     border-radius: 30px;
@@ -214,10 +232,11 @@ h2{
     margin-bottom: 30px;
     text-align: center;
     border:solid 3px;
+    scroll-margin-top: 80px;
 }
 
 /*SO*/
-#SobreOura{
+#sobreoura-i{
     height: 600px;
     width: 100%;
     background-image: url("./img/anillosOura.png");
@@ -261,7 +280,7 @@ h2{
 }
 
 /*principal*/
-#SobreOura{
+#sobreoura-i{
     width: 100%;    
 }
 
@@ -299,6 +318,7 @@ h2{
 
 
 /*Generaciones - Tabla*/  
+
 #tabla-generaciones {
     display: flex;
     justify-content: center;
@@ -306,10 +326,10 @@ h2{
     padding: 20px;   
     border-radius: 20px;
 }
-#Generaciones th{
+#tabla-generaciones th{
     padding: 10px;
 }
-#Generaciones .modelo{
+#tabla-generaciones .modelo{
     border-radius: 30px;
     border-top: none;
     border-left: none;
@@ -340,39 +360,79 @@ h2{
     padding: 0;
     margin: 0;
 }
-#Comp-generaciones{
+.Comp{
 
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
     border:solid 3px;
     border-radius: 20px;
 }
-#Comp-txt{
+.box{
     border-radius: 20px;
     margin: 20px;
     text-align: center;
 }
-  
+#analisis-competencia hr { 
+    border-top: 2px solid #000;        
+    width: 90%;             
+}
+/*Competencia*/
+#v-comp{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#competencia-img{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+#comp-analisis{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.img-comp{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    padding: 20px 20px;
+}
+.img-comp img{
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.img-comp p{
+    text-align: center;
+}
+
 
 
 
 /*Mas Informacion*/
-#Info {
+#info-i {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-#Info button {
+#info-i button {
     height: 40px;
     width: 30%;
     border-radius: 20px;
     border-radius: 40px;
     cursor: pointer;
     margin-bottom: 20px;
+}
+hr {
+    border-top: 2px solid #000;        
+    width: 100%;                
 }
 
 /*footer*/
@@ -386,4 +446,9 @@ footer{
     border-radius: 10px;
     height: 60px;
 }
-
+#Inicio, #SobreOura, #Beneficios, #Generaciones, #Competencia {
+    margin-bottom: 80px;
+}
+#SobreOura, #Beneficios, #Generaciones, #Competencia{
+    margin-top: 40px; 
+}
