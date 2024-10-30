@@ -1,7 +1,7 @@
 /*Color*/
 :root{
     --color-menu-fixed: #a1906281;
-    --color-beige-fondo: #f3db9869;
+    --color-marron: #f3db9869;
     --color-negro: #000000;
     --color-blanco: #ffffff;
     --color-cuadrogaleria: rgb(73, 55, 55);
@@ -9,7 +9,7 @@
 
 }
 html{
-    background-color: var(--color-beige-fondo);
+    background-color: var(--color-marron);
     color: var(--color-negro);
 }
 #MenuHeader{
@@ -30,6 +30,7 @@ html{
 h2{
     background-color: var(--color-blanco);
     color: var(--color-negro);
+    border-color: var(--color-marron);
 }
 .barra-galeria {
     background-color: var(--color-blanco);
@@ -40,6 +41,9 @@ h2{
 .div-galeria h3,.div-galeria li {
     color: var(--color-blanco);
 }
+#tabla-generaciones{
+    background-color: var(--color-cuadrogaleria);
+}
 #Generaciones .tabla-info{
     background-color: var(--color-blanco);
 }
@@ -47,6 +51,12 @@ h2{
     background-color: var(--color-rojo);
     color: var(--color-blanco);
     border-color: var(--color-negro);
+}
+#Comp-generaciones{
+    border-color: var(--color-cuadrogaleria);
+}
+#Comp-generaciones{
+    background-color: var(--color-blanco);
 }
 th,td{
     border: 2px solid var(--color-negro);
@@ -101,6 +111,9 @@ h2{
 #tabla-generaciones .sidebar{
     font-size: 20px;
     font-weight: bold;
+}
+#Comp-txt{
+    font-size: 20px;
 }
 #Info p{
     font-size: 30px;
@@ -191,7 +204,7 @@ footer a{
     text-decoration: none;
 }
 
-/*main*/
+/*general*/
 h2{
     width: 35%;
     border-radius: 30px;
@@ -200,7 +213,10 @@ h2{
     margin-top: 40px;
     margin-bottom: 30px;
     text-align: center;
+    border:solid 3px;
 }
+
+/*SO*/
 #SobreOura{
     height: 600px;
     width: 100%;
@@ -234,6 +250,7 @@ h2{
     
     border-radius: 20px;
     margin: 40px;
+    text-align: center;
 }
 #SO-bottom{
     margin-top: 200px;
@@ -287,6 +304,7 @@ h2{
     justify-content: center;
     align-items: center;
     padding: 20px;   
+    border-radius: 20px;
 }
 #Generaciones th{
     padding: 10px;
@@ -306,6 +324,7 @@ h2{
     display: grid;
     height: 100%;
 }
+
 #tabla-generaciones table {
     width: 100%;
     border-collapse: collapse;
@@ -321,6 +340,25 @@ h2{
     padding: 0;
     margin: 0;
 }
+#Comp-generaciones{
+
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border:solid 3px;
+    border-radius: 20px;
+}
+#Comp-txt{
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+  
+
+
 
 /*Mas Informacion*/
 #Info {
